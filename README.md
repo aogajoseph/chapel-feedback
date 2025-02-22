@@ -29,8 +29,8 @@ This is the frontend application for submitting feedback in the **The Chapel Fee
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/aogajoseph/chapel-feedback-submission.git
-   cd chapel-feedback-submission
+   git clone https://github.com/aogajoseph/chapel-feedback.git
+   cd chapel-feedback
 
 2. Install dependencies:
 
