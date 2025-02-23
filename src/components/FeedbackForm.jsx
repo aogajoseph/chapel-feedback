@@ -43,7 +43,7 @@ const FeedbackForm = () => {
           required
           sx={{ mb: 2, }}
           InputLabelProps={{
-            sx: { fontStyle: "italic" }, // Italicizes the label
+            sx: { fontStyle: "italic", color: "#CCCCCC" },
           }}
         />
         <Button type="submit" variant="contained" color="secondary" fullWidth>
