@@ -12,7 +12,7 @@ This is the frontend application for submitting feedback in the **The Chapel Fee
 ## Tech Stack
 
 - React.js (Frontend)
-- Tailwind CSS (Styling)
+- Material UI (Styling)
 - AWS Amplify (Backend & Hosting)
 - DynamoDB (Database)
 
