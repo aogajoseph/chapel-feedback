@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { TextField, Button, Snackbar, Alert, Box } from "@mui/material";
 
 const FeedbackForm = () => {
   const [feedback, setFeedback] = useState("");
@@ -21,26 +22,35 @@ const FeedbackForm = () => {
   };
 
   return (
-    <div className="relative p-4">
-      {showMessage && (
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-4 py-2 rounded shadow">
-            Your feedback has been submitted successfully. Thank you!
-        </div>
-      )}
+    <Box sx={{ p: 2, maxWidth: 500, mx: "auto", textAlign: "center" }}>
+      {/* Success message */}
+      <Snackbar open={showMessage} autoHideDuration={3000}>
+        <Alert severity="success" variant="filled">
+          Feedback sent successfully!
+        </Alert>
+      </Snackbar>
 
-      <form onSubmit={handleSubmit} className="p-4">
-        <textarea
-          className="w-full p-2 border rounded"
-          placeholder="Share your feedback..."
+      {/* Feedback form */}
+      <form onSubmit={handleSubmit}>
+        <TextField
+          fullWidth
+          multiline
+          rows={6}
+          label="Type your feedback here (max 500 characters)..."
+          variant="outlined"
           value={feedback}
           onChange={(e) => setFeedback(e.target.value)}
           required
+          sx={{ mb: 2, }}
+          InputLabelProps={{
+            sx: { fontStyle: "italic" }, // Italicizes the label
+          }}
         />
-        <button type="submit" className="mt-2 px-4 py-2 bg-blue-500 text-white rounded">
-          Submit Feedback
-        </button>
+        <Button type="submit" variant="contained" color="secondary" fullWidth>
+          Submit
+        </Button>
       </form>
-    </div>
+    </Box>
   );
 };
 
