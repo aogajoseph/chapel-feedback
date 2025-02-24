@@ -35,7 +35,7 @@ const FeedbackForm = () => {
         <TextField
           fullWidth
           multiline
-          rows={6}
+          rows={4}
           label="Type your feedback here (max 500 characters)..."
           variant="outlined"
           value={feedback}
@@ -43,7 +43,7 @@ const FeedbackForm = () => {
           required
           sx={{ mb: 2, }}
           InputLabelProps={{
-            sx: { fontStyle: "italic", color: "#CCCCCC" },
+            sx: { fontStyle: "italic", color: "#808080", fontSize: ".9rem" },
           }}
         />
         <Button type="submit" variant="contained" color="secondary" fullWidth>

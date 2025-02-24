@@ -14,10 +14,21 @@ const Home = () => {
 
   return (
     <Container maxWidth="sm" sx={{ mt: 10, textAlign: "center" }}>
-      <Typography variant="h4" fontWeight="bold" gutterBottom>
+      <Typography 
+        variant="h4" 
+        fontWeight="bold" 
+        gutterBottom 
+        sx={{ fontFamily: "Times New Roman" }} 
+      >
         The Chapel Feedback
       </Typography>
-      <Typography variant="subtitle1" color="textSecondary" gutterBottom>
+      
+      <Typography 
+        variant="subtitle1" 
+        color="textSecondary" 
+        gutterBottom 
+        sx={{ fontFamily: "Times New Roman" }}
+      >
         Share your feedback anonymously. We value your thoughts!
       </Typography>
 
