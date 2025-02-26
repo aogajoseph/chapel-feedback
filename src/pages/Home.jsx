@@ -17,8 +17,7 @@ const Home = () => {
       <Typography 
         variant="h4" 
         fontWeight="bold" 
-        gutterBottom 
-        sx={{ fontFamily: "Times New Roman" }} 
+        gutterBottom
       >
         The Chapel Feedback
       </Typography>
@@ -26,8 +25,7 @@ const Home = () => {
       <Typography 
         variant="subtitle1" 
         color="textSecondary" 
-        gutterBottom 
-        sx={{ fontFamily: "Times New Roman" }}
+        gutterBottom
       >
         Share your feedback anonymously. We value your thoughts!
       </Typography>
