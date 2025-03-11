@@ -58,7 +58,7 @@ const FeedbackForm = () => {
           fullWidth
           multiline
           rows={4}
-          label="Type your feedback here (max 500 characters)..."
+          label="Write your feedback here (max 500 characters)..."
           variant="outlined"
           value={feedback}
           onChange={(e) => setFeedback(e.target.value)}
