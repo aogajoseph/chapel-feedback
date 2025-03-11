@@ -7,14 +7,14 @@ This is the frontend application for submitting feedback in the **The Chapel Fee
 - Simple and intuitive feedback form
 - Anonymous feedback submission
 - Responsive design for all devices
-- Secure submission using AWS backend
+- Secure submission using Supabase backend
 
 ## Tech Stack
 
 - React.js (Frontend)
 - Material UI (Styling)
-- AWS Amplify (Backend & Hosting)
-- DynamoDB (Database)
+- Supabase and Vercel (Backend & Hosting)
+- Suabase (Database)
 
 ## Getting Started
 
@@ -22,7 +22,7 @@ This is the frontend application for submitting feedback in the **The Chapel Fee
 
 - Node.js installed
 - Git installed
-- AWS Amplify CLI set up
+- Supabase and Vercel setup
 
 ### Installation
 
@@ -42,11 +42,11 @@ This is the frontend application for submitting feedback in the **The Chapel Fee
 
 ### Deployment     
 
-To deploy the application via AWS Amplify:
+To deploy the application via Vercel:
 
     ```bash
-    `amplify add hosting`
-    `amplify publish`
+    `npx vercel`
+    `npx vercel --prod`
 
 ### Contributing 
 

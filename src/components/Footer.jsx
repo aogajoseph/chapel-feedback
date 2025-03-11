@@ -38,6 +38,18 @@ const Footer = () => {
         >
           Privacy Policy
         </Link>
+        <Link 
+          href="/privacy-policy" 
+          sx={{ 
+            mx: 1, 
+            paddingRight: 5,
+            textDecoration: "none", 
+            color: "yellow",
+            "&:hover": { color: "grey.600" } 
+          }}
+        >
+          Help
+        </Link>
       </Typography>
     </Box>
   );
