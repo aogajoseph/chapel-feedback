@@ -24,31 +24,41 @@ const Footer = () => {
             "&:hover": { color: "grey.600" } 
           }}
         >
-          Terms of Service
+          Terms
         </Link>
         <Link 
           href="/privacy-policy" 
           sx={{ 
             mx: 1, 
-            paddingRight: 5,
             textDecoration: "none", 
             color: "yellow",
             "&:hover": { color: "grey.600" } 
           }}
         >
-          Privacy Policy
+          Privacy
         </Link>
         <Link 
-          href="/privacy-policy" 
+          href="/find-help" 
           sx={{ 
             mx: 1, 
-            paddingRight: 5,
             textDecoration: "none", 
             color: "yellow",
             "&:hover": { color: "grey.600" } 
           }}
         >
           Help
+        </Link>
+        <Link 
+          href="/report-issue" 
+          sx={{ 
+            mx: 1, 
+            marginRight: 5,
+            textDecoration: "none", 
+            color: "yellow",
+            "&:hover": { color: "grey.600" } 
+          }}
+        >
+          Report
         </Link>
       </Typography>
     </Box>
